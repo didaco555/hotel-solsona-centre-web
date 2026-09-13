@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ========= SEO ========= -->
+<title>Hotel Solsona Centre | Hotel en el centro de Solsona (Lleida)</title>
+<meta name="description" content="Hotel de 2 estrellas en el centro de Solsona, a 5 minutos a pie del casco medieval y a 30 km de Port del Comte. Reserva directa por teléfono: 650 464 032.">
+<link rel="canonical" href="https://www.hotelsolsonacentre.com/">
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="ES-CT">
+<meta name="geo.placename" content="Solsona">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Hotel Solsona Centre">
+<meta property="og:title" content="Hotel Solsona Centre | Hotel en el centro de Solsona">
+<meta property="og:description" content="Hotel familiar de 2 estrellas en el centro de Solsona. Reserva directa por teléfono, sin intermediarios.">
+<meta property="og:url" content="https://www.hotelsolsonacentre.com/">
+<meta property="og:image" content="https://www.hotelsolsonacentre.com/img/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --pi:#16302A;        /* verde pino, fondo oscuro */
+  --pi-fosc:#0E1F1B;
+  --pedra:#EDEEE8;     /* fondo claro, piedra fría */
+  --pedra-2:#E2E4DB;
+  --tinta:#1A211E;
+  --salvia:#8FA396;
+  --or:#C89439;        /* acento, muy dosificado */
+  --max:1080px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--pedra);
+  color:var(--tinta);
+  font-family:"Karla",system-ui,sans-serif;
+  font-size:17px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Newsreader",Georgia,serif;font-weight:400;line-height:1.1;margin:0}
+p{margin:0 0 1em;max-width:62ch}
+a{color:inherit}
+img{display:block;width:100%;height:100%;object-fit:cover}
+
+.embolcall{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+/* ---------- barra superior ---------- */
+.barra{
+  position:sticky;top:0;z-index:50;
+  background:rgba(14,31,27,.94);
+  backdrop-filter:blur(6px);
+  color:var(--pedra);
+  border-bottom:1px solid rgba(237,238,232,.14);
+}
+.barra .embolcall{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
+.marca{font-family:"Newsreader",serif;font-size:19px;letter-spacing:.01em;text-decoration:none}
+.marca span{color:var(--salvia)}
+.barra-tel{
+  display:inline-flex;align-items:center;gap:9px;
+  text-decoration:none;font-weight:700;font-size:16px;
+  background:var(--or);color:var(--pi-fosc);
+  padding:9px 16px;border-radius:2px;white-space:nowrap;
+}
+.barra-tel:hover{background:#d9a44d}
+
+/* ---------- hero ---------- */
+.hero{position:relative;background:var(--pi-fosc);color:var(--pedra);overflow:hidden}
+.hero-foto{position:absolute;inset:0}
+.hero-foto::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(14,31,27,.55) 0%,rgba(14,31,27,.72) 45%,rgba(14,31,27,.94) 100%);
+}
+.hero-foto img{opacity:.9}
+.hero .embolcall{position:relative;padding-top:92px;padding-bottom:64px}
+
+.hero h1{font-size:clamp(44px,8.5vw,86px);letter-spacing:-.015em}
+.hero h1 em{display:block;font-style:italic;font-weight:300;color:var(--salvia)}
+.hero-sub{margin-top:20px;font-size:clamp(17px,2.4vw,20px);color:#D4DAD2;max-width:34ch}
+
+.telefon{
+  display:block;margin-top:44px;text-decoration:none;
+  border-top:1px solid rgba(237,238,232,.28);
+  padding-top:18px;
+}
+.telefon small{display:block;font-size:15px;color:var(--salvia);margin-bottom:2px}
+.telefon strong{
+  font-family:"Newsreader",serif;font-weight:400;
+  font-size:clamp(38px,7.5vw,66px);line-height:1.05;
+  letter-spacing:-.02em;display:block;
+}
+.telefon:hover strong{color:var(--or)}
+.hero-correu{margin-top:14px;font-size:16px;color:#D4DAD2}
+.hero-correu a{color:var(--pedra)}
+
+/* ---------- franja de reserva directa ---------- */
+.directa{background:var(--pi);color:var(--pedra)}
+.directa .embolcall{padding:54px 24px 58px}
+.directa h2{font-size:clamp(26px,4vw,36px);margin-bottom:28px;max-width:22ch}
+.raons{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin:0;padding:0;list-style:none}
+.raons li{border-top:2px solid var(--or);padding-top:14px}
+.raons b{display:block;font-size:18px;margin-bottom:4px}
+.raons span{color:#C2CBC3;font-size:16px;line-height:1.55}
+
+/* ---------- secciones claras ---------- */
+.seccio{padding:76px 0}
+.seccio h2{font-size:clamp(30px,5vw,44px);margin-bottom:10px}
+.entradeta{color:#4C5B54;max-width:56ch;margin-bottom:36px}
+
+.hab-cap{display:grid;gap:40px;grid-template-columns:1.35fr 1fr;align-items:end;margin-bottom:40px}
+.hab-cap .foto{aspect-ratio:3/4}
+.hab-cap h2{margin-bottom:10px}
+.hab-cap .entradeta{margin-bottom:0}
+.banda-foto{position:relative;aspect-ratio:1024/460;margin-bottom:40px;background:linear-gradient(135deg,var(--salvia),#5E7468)}
+.habitacions{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.hab{background:#fff;border:1px solid var(--pedra-2);display:flex;flex-direction:column}
+.foto{position:relative;aspect-ratio:4/3;background:linear-gradient(135deg,var(--salvia),#5E7468)}
+.foto.sense-foto::after{
+  content:attr(data-nom);position:absolute;inset:0;
+  display:flex;align-items:center;justify-content:center;
+  color:rgba(255,255,255,.8);font-size:14px;text-align:center;padding:12px;
+}
+.hab-cos{padding:22px 22px 24px;display:flex;flex-direction:column;flex:1}
+.hab h3{font-size:25px;margin-bottom:8px}
+.hab p{font-size:16px;color:#4C5B54;flex:1}
+
+/* ---------- servicios ---------- */
+.serveis{background:var(--pedra-2)}
+.llista-serveis{display:grid;gap:12px 32px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));list-style:none;margin:0;padding:0}
+.llista-serveis li{padding-left:22px;position:relative;font-size:16.5px}
+.llista-serveis li::before{content:"";position:absolute;left:0;top:11px;width:9px;height:2px;background:var(--or)}
+
+/* ---------- entorno ---------- */
+.entorn-graella{display:grid;gap:40px;grid-template-columns:1.1fr 1fr;align-items:start}
+.entorn-graella .foto{aspect-ratio:4/3}
+.distancies{list-style:none;margin:26px 0 0;padding:0;max-width:44ch}
+.distancies li{display:flex;justify-content:space-between;gap:18px;border-bottom:1px solid var(--pedra-2);padding:11px 0;font-size:16.5px}
+.distancies span{color:#6A776F;white-space:nowrap}
+
+/* ---------- contacto ---------- */
+.contacte{background:var(--pi-fosc);color:var(--pedra)}
+.contacte h2{color:var(--pedra)}
+.contacte-graella{display:grid;gap:44px;grid-template-columns:1fr 1.15fr;align-items:start}
+.dada{margin-bottom:26px}
+.dada small{display:block;color:var(--salvia);font-size:14.5px;margin-bottom:3px}
+.dada a,.dada address{
+  font-family:"Newsreader",serif;font-style:normal;
+  font-size:clamp(22px,3.2vw,30px);line-height:1.25;
+  text-decoration:none;letter-spacing:-.01em;
+}
+.dada a:hover{color:var(--or)}
+.mapa{border:0;width:100%;aspect-ratio:1/1;filter:grayscale(.35) contrast(1.05)}
+
+/* ---------- pie ---------- */
+.peu{background:var(--pi-fosc);color:#95A69B;border-top:1px solid rgba(237,238,232,.14);font-size:14.5px}
+.peu .embolcall{padding:26px 24px;display:flex;flex-wrap:wrap;gap:10px 26px;justify-content:space-between}
+
+/* ---------- botón flotante móvil ---------- */
+.trucada-flotant{display:none}
+
+@media (max-width:820px){
+  .entorn-graella,.contacte-graella,.hab-cap{grid-template-columns:1fr}
+  .hab-cap .foto{aspect-ratio:4/3}
+  .seccio{padding:58px 0}
+  .hero .embolcall{padding-top:64px;padding-bottom:130px}
+}
+@media (max-width:620px){
+  .barra-tel span{display:none}
+  .trucada-flotant{
+    display:flex;position:fixed;left:16px;right:16px;bottom:16px;z-index:60;
+    align-items:center;justify-content:center;gap:10px;
+    background:var(--or);color:var(--pi-fosc);
+    text-decoration:none;font-weight:700;font-size:18px;
+    padding:15px;border-radius:2px;
+    box-shadow:0 6px 22px rgba(14,31,27,.35);
+  }
+}
+
+a:focus-visible,button:focus-visible{outline:3px solid var(--or);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+
+<body>
+
+<header class="barra">
+  <div class="embolcall">
+    <a class="marca" href="#">Hotel Solsona <span>Centre</span></a>
+    <a class="barra-tel" href="tel:+34650464032">650 464 032<span> · llámanos</span></a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-foto foto" data-nom="img/hero.jpg">
+      <img src="img/hero.jpg" alt="Fachada del Hotel Solsona Centre, en el centro de Solsona">
+    </div>
+    <div class="embolcall">
+      <h1>Hotel Solsona <em>Centre</em></h1>
+      <p class="hero-sub">En el centro de Solsona, a cinco minutos a pie del casco medieval y a media hora de Port del Comte.</p>
+
+      <a class="telefon" href="tel:+34650464032">
+        <small>Reserva hablando con nosotros</small>
+        <strong>650 464 032</strong>
+      </a>
+      <p class="hero-correu">Atendemos llamadas hasta las 21:00. También por <a href="https://wa.me/34650464032">WhatsApp</a>, al mismo número.</p>
+    </div>
+  </section>
+
+  <!-- ============ RESERVA DIRECTA ============ -->
+  <section class="directa">
+    <div class="embolcall">
+      <h2>Reservar por teléfono es más fácil que rellenar un formulario</h2>
+      <ul class="raons">
+        <li>
+          <b>Hablas con el hotel</b>
+          <span>Te atiende quien lleva el hotel, no un centro de llamadas. Te contamos qué habitación encaja mejor con lo que necesitas.</span>
+        </li>
+        <li>
+          <b>Sin intermediarios</b>
+          <span>Reservando directamente no hay comisiones de por medio, y podemos ajustarte el precio.</span>
+        </li>
+        <li>
+          <b>Flexibilidad real</b>
+          <span>Llegadas tarde, grupos o estancias largas: se habla y se arregla. Si te va mejor escribir, tienes WhatsApp en el mismo número.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ HABITACIONES ============ -->
+  <section class="seccio" id="habitaciones">
+    <div class="embolcall">
+      <div class="hab-cap">
+        <div>
+          <h2>Habitaciones</h2>
+          <p class="entradeta">Sencillas y bien cuidadas, todas con baño privado, aire acondicionado, calefacción, televisión y wifi gratuito. El precio cambia según la temporada: llámanos y te decimos el de tus fechas.</p>
+        </div>
+        <div class="foto" data-nom="img/pasillo.jpg"><img src="img/pasillo.jpg" alt="Pasillo de habitaciones del Hotel Solsona Centre"></div>
+      </div>
+
+      <div class="habitacions">
+        <article class="hab">
+          <div class="foto" data-nom="img/doble.jpg"><img src="img/doble.jpg" alt="Habitación doble con cama de matrimonio del Hotel Solsona Centre"></div>
+          <div class="hab-cos">
+            <h3>Doble de matrimonio</h3>
+            <p>Cama de matrimonio, mesitas, armario y baño privado con secador. La opción habitual para parejas.</p>
+          </div>
+        </article>
+
+        <article class="hab">
+          <div class="foto" data-nom="img/twin.jpg"><img src="img/twin.jpg" alt="Habitación doble con dos camas individuales del Hotel Solsona Centre"></div>
+          <div class="hab-cos">
+            <h3>Doble con dos camas</h3>
+            <p>Dos camas individuales, escritorio y baño privado. Va bien para amigos, compañeros de trabajo o familia.</p>
+          </div>
+        </article>
+
+        <article class="hab">
+          <div class="foto" data-nom="img/individual.jpg"><img src="img/individual.jpg" alt="Habitación individual del Hotel Solsona Centre"></div>
+          <div class="hab-cos">
+            <h3>Individual</h3>
+            <p>Para una persona. Cama individual, escritorio y baño privado. Ideal para una noche de paso o viaje de trabajo.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICIOS ============ -->
+  <section class="seccio serveis" id="servicios">
+    <div class="embolcall">
+      <div class="banda-foto foto" data-nom="img/cafeteria.jpg">
+        <img src="img/cafeteria.jpg" alt="Bar y cafetería del Hotel Solsona Centre">
+      </div>
+      <h2>Qué incluye</h2>
+      <p class="entradeta">Lo justo y necesario, funcionando bien. El bar del hotel abre para desayunar y para tomar algo por la tarde.</p>
+      <ul class="llista-serveis">
+        <li>Wifi gratuito en todo el hotel</li>
+        <li>Aire acondicionado y calefacción</li>
+        <li>Baño privado con secador</li>
+        <li>Televisión con canales por satélite</li>
+        <li>Bar y cafetería</li>
+        <li>Aparcamiento gratuito cerca</li>
+        <li>Salas independientes para grupos</li>
+        <li>Información turística de la zona</li>
+        <li>Atención directa por WhatsApp</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ ENTORNO ============ -->
+  <section class="seccio" id="solsona">
+    <div class="embolcall entorn-graella">
+      <div>
+        <h2>Dormir en el centro de Solsona</h2>
+        <p>Solsona es una ciudad medieval de calles estrechas, fuentes y pórticos, capital del Solsonès y puerta del Prepirineo de Lleida. Desde el hotel sales andando a la catedral, al museo diocesano y a los bares del casco antiguo.</p>
+        <p>Es una buena base para esquiar en Port del Comte, para hacer senderismo y BTT por la sierra, para el Carnaval o para recorrer las bodegas de la zona.</p>
+
+        <ul class="distancies">
+          <li>Casco antiguo y catedral <span>5 min a pie</span></li>
+          <li>Estación de esquí Port del Comte <span>30 km</span></li>
+          <li>Castillo de Cardona <span>20 km</span></li>
+          <li>Pantano de la Llosa del Cavall <span>18 km</span></li>
+          <li>Manresa <span>50 km</span></li>
+          <li>Barcelona <span>1 h 45 min</span></li>
+        </ul>
+      </div>
+      <div class="foto" data-nom="img/fachada.jpg">
+        <img src="img/fachada.jpg" alt="Fachada del Hotel Solsona Centre en Solsona, Lleida">
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="seccio contacte" id="contacto">
+    <div class="embolcall contacte-graella">
+      <div>
+        <h2>Reserva y contacto</h2>
+        <p style="color:#C2CBC3">Llámanos y te decimos disponibilidad y precio al momento.</p>
+
+        <div class="dada">
+          <small>Teléfono</small>
+          <a href="tel:+34650464032">650 464 032</a>
+          <p style="color:#C2CBC3;font-size:16px;margin:6px 0 0">Atendemos llamadas hasta las 21:00.</p>
+        </div>
+        <div class="dada">
+          <small>WhatsApp</small>
+          <a href="https://wa.me/34650464032">Escríbenos al 650 464 032</a>
+        </div>
+        <div class="dada">
+          <small>Dirección</small>
+          <address>Carrer Àngel Guimerà, 3<br>25280 Solsona, Lleida</address>
+        </div>
+        <div class="dada">
+          <small>Recepción</small>
+          <address style="font-size:20px">Entrada desde las 13:00 · Salida hasta las 11:00</address>
+        </div>
+      </div>
+
+      <iframe
+        class="mapa"
+        title="Mapa de situación del Hotel Solsona Centre"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://maps.google.com/maps?q=Carrer%20%C3%80ngel%20Guimer%C3%A0%203%2C%2025280%20Solsona&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+  </section>
+
+</main>
+
+<footer class="peu">
+  <div class="embolcall">
+    <span>Hotel Solsona Centre · Carrer Àngel Guimerà, 3 · 25280 Solsona (Lleida)</span>
+    <span>650 464 032</span>
+  </div>
+</footer>
+
+<a class="trucada-flotant" href="tel:+34650464032">Llamar al hotel</a>
+
+<!-- ========= Datos estructurados para Google ========= -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Hotel",
+  "name":"Hotel Solsona Centre",
+  "description":"Hotel familiar de 2 estrellas en el centro de Solsona, en el Prepirineo de Lleida. Habitaciones con baño privado, wifi gratuito, aire acondicionado y calefacción.",
+  "url":"https://www.hotelsolsonacentre.com/",
+  "image":"https://www.hotelsolsonacentre.com/img/hero.jpg",
+  "telephone":"+34650464032",
+  "priceRange":"€",
+  "starRating":{"@type":"Rating","ratingValue":"2"},
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Carrer Àngel Guimerà, 3",
+    "addressLocality":"Solsona",
+    "addressRegion":"Lleida",
+    "postalCode":"25280",
+    "addressCountry":"ES"
+  },
+  "geo":{"@type":"GeoCoordinates","latitude":41.99459,"longitude":1.51840},
+  "checkinTime":"13:00",
+  "checkoutTime":"11:00",
+  "petsAllowed":false,
+  "amenityFeature":[
+    {"@type":"LocationFeatureSpecification","name":"Wifi gratuito","value":true},
+    {"@type":"LocationFeatureSpecification","name":"Aire acondicionado","value":true},
+    {"@type":"LocationFeatureSpecification","name":"Calefacción","value":true},
+    {"@type":"LocationFeatureSpecification","name":"Aparcamiento gratuito","value":true},
+    {"@type":"LocationFeatureSpecification","name":"Bar","value":true}
+  ]
+}
+</script>
+
+<script>
+// Si alguna foto todavía no está subida, la caja muestra el nombre del archivo que falta.
+document.querySelectorAll('.foto img').forEach(function(im){
+  im.addEventListener('error', function(){
+    im.style.display='none';
+    im.parentElement.classList.add('sense-foto');
+  });
+});
+</script>
+
+</body>
+</html>
