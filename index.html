@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+<!-- ================= SEO =================
+     Si conectas un dominio propio, cambia la dirección en: canonical, og:url, og:image,
+     el bloque JSON-LD del final, sitemap.xml y robots.txt. -->
+<title>Hotel Solsona Centre · Hotel familiar en el centro de Solsona (Lleida)</title>
+<meta name="description" content="Hotel familiar de 2 estrellas en el centro de Solsona, a 5 minutos a pie del casco antiguo y a 30 km de Port del Comte. Mejor tarifa reservando directamente: 650 464 032.">
+<link rel="canonical" href="https://didaco555.github.io/hotel-solsona-centre-web/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="geo.region" content="ES-CT">
+<meta name="geo.placename" content="Solsona">
+<meta name="geo.position" content="41.99459;1.51840">
+<meta name="theme-color" content="#F4EFE7">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
+<meta property="og:site_name" content="Hotel Solsona Centre">
+<meta property="og:title" content="Hotel Solsona Centre · En el corazón de Solsona">
+<meta property="og:description" content="Hotel familiar en el centro de Solsona. Reserva directamente al 650 464 032 y consigue la mejor tarifa.">
+<meta property="og:url" content="https://didaco555.github.io/hotel-solsona-centre-web/">
+<meta property="og:image" content="https://didaco555.github.io/hotel-solsona-centre-web/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23A5432E'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='36' font-style='italic' text-anchor='middle' fill='%23F4EFE7'%3ES%3C/text%3E%3C/svg%3E">
+
+<link rel="preload" href="fonts/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="fachada.webp" type="image/webp">
+
+<style>
+/* Tipografías alojadas en la propia web (más rápido y sin depender de Google) */
+@font-face{font-family:"Cormorant Garamond";src:url(fonts/cormorant-garamond-latin-400-normal.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Cormorant Garamond";src:url(fonts/cormorant-garamond-latin-400-italic.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Cormorant Garamond";src:url(fonts/cormorant-garamond-latin-500-normal.woff2) format("woff2");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Cormorant Garamond";src:url(fonts/cormorant-garamond-latin-500-italic.woff2) format("woff2");font-weight:500;font-style:italic;font-display:swap}
+@font-face{font-family:"Jost";src:url(fonts/jost-latin-300-normal.woff2) format("woff2");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Jost";src:url(fonts/jost-latin-400-normal.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Jost";src:url(fonts/jost-latin-500-normal.woff2) format("woff2");font-weight:500;font-style:normal;font-display:swap}
+
+/* ==========================================================
+   Paleta tomada de la fachada: el marfil de las paredes,
+   el terracota de la entrada y el grafito de ventanas y rótulo.
+   ========================================================== */
+:root{
+  --marfil:#F4EFE7;
+  --papel:#FBF9F5;
+  --arena:#E6DDCF;
+  --linea:#D9CEBD;
+  --grafito:#1F1C19;
+  --grafito-2:#2A2622;
+  --texto:#3A342E;
+  --suave:#766D63;
+  --terracota:#A5432E;
+  --terracota-2:#8C3825;
+  --terracota-claro:#E9C9BD;
+  --max:1200px;
+  --serif:"Cormorant Garamond","Times New Roman",Georgia,serif;
+  --sans:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--marfil);color:var(--texto);
+  font-family:var(--sans);font-weight:400;font-size:17px;line-height:1.7;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+h1,h2,h3{font-family:var(--serif);font-weight:500;color:var(--grafito);margin:0;line-height:1.04;letter-spacing:-.005em;text-wrap:balance}
+h2{font-size:clamp(38px,7vw,64px)}
+h2 em,h1 em{font-style:italic;font-weight:400;color:var(--terracota)}
+p{margin:0 0 1.1em}
+a{color:inherit}
+img{display:block;width:100%;height:auto}
+picture{display:block}
+ul,ol{margin:0;padding:0;list-style:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+svg.i{width:1.15em;height:1.15em;flex:none;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+
+.caja{max-width:var(--max);margin:0 auto;padding:0 22px}
+.seccion{padding:88px 0}
+.etiqueta{
+  display:block;font-family:var(--sans);font-size:12px;font-weight:500;
+  letter-spacing:.24em;text-transform:uppercase;color:var(--terracota);margin-bottom:18px;
+}
+.lead{font-size:18.5px;color:var(--suave);max-width:54ch;font-weight:400}
+.lead strong{font-weight:500;color:var(--texto)}
+
+/* ---------- botones y enlaces ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:56px;padding:0 26px;border:0;border-radius:2px;cursor:pointer;
+  font:500 16.5px/1 var(--sans);letter-spacing:.02em;
+  text-decoration:none;white-space:nowrap;transition:background-color .2s,color .2s,box-shadow .2s;
+}
+.btn-lleno{background:var(--terracota);color:#fff}
+.btn-lleno:hover{background:var(--terracota-2)}
+.btn-linea{background:transparent;color:var(--grafito);box-shadow:inset 0 0 0 1px var(--grafito)}
+.btn-linea:hover{background:var(--grafito);color:var(--marfil)}
+.btn-wa{background:var(--grafito);color:var(--papel)}
+.btn-wa:hover{background:#000}
+.btn-wa svg.i,.barra-movil .wa svg.i{color:#5BD08A}
+.enlace{
+  display:inline-flex;align-items:center;gap:10px;text-decoration:none;
+  font:500 15.5px/1 var(--sans);letter-spacing:.02em;color:var(--terracota);
+  padding-bottom:6px;border-bottom:1px solid currentColor;transition:gap .2s,color .2s;
+}
+.enlace:hover{gap:16px;color:var(--terracota-2)}
+
+/* ---------- cabecera ---------- */
+.cabecera{
+  position:sticky;top:0;z-index:50;background:rgba(244,239,231,.9);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border-bottom:1px solid transparent;transition:border-color .3s;
+}
+.cabecera.con-linea{border-bottom-color:var(--linea)}
+.cabecera .caja{display:flex;align-items:center;justify-content:space-between;gap:20px;height:68px}
+.marca{text-decoration:none;line-height:1;display:flex;flex-direction:column;gap:5px}
+.marca small{font:500 10px/1 var(--sans);letter-spacing:.34em;text-transform:uppercase;color:var(--terracota)}
+.marca span{font:500 23px/1 var(--serif);color:var(--grafito);letter-spacing:.01em}
+.menu{display:none}
+.cab-tel{
+  display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--grafito);
+  font:500 14px/1 var(--sans);letter-spacing:.08em;
+  width:44px;height:44px;justify-content:center;border:1px solid var(--linea);border-radius:50%;
+}
+.cab-tel .texto{display:none}
+.cab-acciones{display:flex;align-items:center;gap:10px}
+.cab-reservar{display:none}
+
+/* ---------- portada ---------- */
+.portada{position:relative;padding-bottom:40px}
+.portada-foto{height:min(42vh,380px);overflow:hidden;background:var(--arena)}
+.portada-foto picture,.portada-foto img{height:100%}
+.portada-foto img{object-fit:cover;object-position:center 42%}
+.portada-texto{
+  position:relative;margin:-44px 14px 0;background:var(--papel);
+  padding:30px 22px 30px;box-shadow:0 30px 60px -30px rgba(31,28,25,.25);
+}
+.portada h1{font-size:clamp(44px,11.5vw,96px);line-height:.95}
+.portada h1 span{display:block;font-family:var(--sans);font-weight:500;font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--terracota);margin-bottom:14px;line-height:1}
+.portada .subtitulo{font:italic 400 clamp(22px,5vw,30px)/1.25 var(--serif);color:var(--texto);margin:12px 0 22px}
+.portada .lead{margin:26px 0 0;font-size:17px}
+.botones{display:flex;flex-wrap:wrap;gap:12px}
+.botones .btn{flex:1 1 230px}
+.tarifa{
+  display:flex;align-items:center;gap:10px;margin:16px 0 0;
+  font-size:15px;color:var(--texto);
+}
+.tarifa svg{color:var(--terracota)}
+
+/* ---------- cómo reservar ---------- */
+.pasos-banda{background:var(--papel);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea)}
+.pasos-banda{padding:44px 0}
+.pasos{display:grid;gap:22px;counter-reset:paso}
+.paso{display:flex;gap:16px;align-items:flex-start}
+.paso::before{
+  counter-increment:paso;content:counter(paso);flex:none;width:42px;height:42px;border-radius:50%;
+  display:grid;place-items:center;border:1px solid var(--terracota);color:var(--terracota);
+  font:500 22px/1 var(--serif);
+}
+.paso b{display:block;font:500 23px/1.2 var(--serif);color:var(--grafito)}
+.paso span{font-size:15.5px;color:var(--suave)}
+.paso a{color:var(--grafito);font-weight:500}
+
+/* ---------- cifras ---------- */
+.cifras{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);margin-top:64px}
+.cifra{padding:22px 8px;text-align:center}
+.cifra+.cifra{border-left:1px solid var(--linea)}
+.cifra b{display:block;font:500 clamp(34px,7vw,48px)/1 var(--serif);color:var(--grafito)}
+.cifra span{display:block;margin-top:8px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--suave);line-height:1.4}
+
+/* ---------- bienvenida ---------- */
+.bienvenida-grid{max-width:760px;margin:0 auto;text-align:center}
+.bienvenida-grid .lead,.bienvenida-grid p{margin-left:auto;margin-right:auto}
+.bienvenida p{max-width:52ch}
+.firma{font:italic 400 24px/1.2 var(--serif);color:var(--terracota);margin-top:8px}
+
+/* ---------- habitaciones ---------- */
+.habitaciones{background:var(--papel)}
+.cab-seccion{display:grid;gap:18px;margin-bottom:48px}
+.cab-seccion .lead{margin:0}
+.lista-hab{display:grid;gap:56px}
+.hab picture{aspect-ratio:4/3;overflow:hidden;background:var(--arena)}
+.hab img{height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.hab:hover img{transform:scale(1.035)}
+.hab-num{display:block;font:italic 400 18px/1 var(--serif);color:var(--terracota);margin:24px 0 10px}
+.hab h3{font-size:clamp(30px,6vw,36px);margin-bottom:12px}
+.hab p{color:var(--suave);margin-bottom:14px;max-width:44ch}
+.hab-datos{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--texto);margin-bottom:22px;line-height:1.9}
+.hab-datos{display:flex;flex-wrap:wrap;gap:4px 18px}
+.hab-datos li{white-space:nowrap;display:flex;align-items:center;gap:8px}
+.hab-datos li::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--terracota)}
+
+/* ---------- reserva directa ---------- */
+.directa{background:var(--grafito);color:#CFC6BA}
+.directa h2{color:var(--papel)}
+.directa h2 em{color:var(--terracota-claro)}
+.directa .etiqueta{color:var(--terracota-claro)}
+.directa .lead{color:#B9AFA3}
+.ventajas{display:grid;gap:0;margin:48px 0 44px}
+.ventaja{padding:26px 0;border-top:1px solid rgba(255,255,255,.14)}
+.ventaja:last-child{border-bottom:1px solid rgba(255,255,255,.14)}
+.ventaja b{display:block;font:500 28px/1.1 var(--serif);color:var(--papel);margin-bottom:8px}
+.ventaja b i{font-style:italic;font-weight:400;color:var(--terracota-claro);margin-right:10px;font-size:22px}
+.ventaja p{margin:0;font-size:16px;font-weight:300;line-height:1.65}
+.directa .btn-linea{color:var(--papel);box-shadow:inset 0 0 0 1px rgba(255,255,255,.5)}
+.directa .btn-linea:hover{background:var(--papel);color:var(--grafito)}
+
+/* ---------- consulta ---------- */
+.consulta-grid{display:grid;gap:44px}
+.formulario{background:var(--papel);padding:34px 24px;border:1px solid var(--linea)}
+.campos{display:grid;gap:24px 20px;grid-template-columns:1fr 1fr}
+.campo{display:flex;flex-direction:column;gap:6px;min-width:0}
+.campo.ancho{grid-column:1/-1}
+.campo label{font-size:11.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:var(--suave)}
+.campo input,.campo select{
+  width:100%;min-height:46px;border:0;border-bottom:1px solid var(--linea);border-radius:0;
+  padding:6px 0;font:400 17px var(--sans);color:var(--grafito);background:transparent;
+  -webkit-appearance:none;appearance:none;
+}
+.campo select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23766D63' stroke-width='1.5'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 0 center;background-size:18px;padding-right:26px}
+.campo input:focus,.campo select:focus{outline:none;border-bottom-color:var(--terracota)}
+.formulario .btn{width:100%;margin-top:30px}
+.error{color:#A1261B;font-size:14.5px;margin:14px 0 0}
+.error:empty{display:none}
+.form-pie{font-size:14.5px;color:var(--suave);margin:18px 0 0;text-align:center}
+.form-pie a{color:var(--grafito)}
+
+/* ---------- opiniones ---------- */
+.opiniones{background:var(--arena)}
+.destacada{max-width:900px;margin:0 auto;text-align:center}
+.destacada blockquote{margin:0;font:italic 400 clamp(30px,6vw,50px)/1.18 var(--serif);color:var(--grafito)}
+.destacada blockquote::before{content:"“";display:block;font:400 90px/.6 var(--serif);color:var(--terracota);margin-bottom:10px;font-style:normal}
+.autor{margin-top:26px;font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--suave)}
+.autor b{color:var(--grafito);font-weight:500}
+.notas{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 34px;margin:40px 0 64px;font-size:14.5px;color:var(--suave)}
+.notas b{font:500 22px/1 var(--serif);color:var(--grafito);margin-right:6px}
+.resenas{
+  display:grid;grid-auto-flow:column;grid-auto-columns:82%;gap:16px;
+  overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -22px;padding:0 22px 12px;scrollbar-width:none;
+}
+.resenas::-webkit-scrollbar{display:none}
+.resena{scroll-snap-align:center;background:var(--papel);padding:28px 24px;margin:0;display:flex;flex-direction:column}
+.resena blockquote{margin:0 0 20px;font:400 21px/1.4 var(--serif);color:var(--grafito);flex:1}
+.resena figcaption{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--suave);line-height:1.6}
+.resena figcaption b{display:block;color:var(--grafito);font-weight:500}
+.puntos{display:flex;justify-content:center;gap:8px;margin-top:18px}
+.puntos span{width:6px;height:6px;border-radius:50%;background:var(--linea);transition:background .2s}
+.puntos span.activo{background:var(--terracota)}
+
+/* ---------- servicios ---------- */
+.servicios-foto picture{aspect-ratio:16/10;overflow:hidden}
+.servicios-foto img{height:100%;object-fit:cover}
+.servicios-grid{display:grid;gap:44px}
+.lista-serv{columns:1;column-gap:40px;margin-top:8px}
+.lista-serv li{break-inside:avoid;display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid var(--linea);font-size:16.5px}
+.lista-serv svg{color:var(--terracota);width:20px;height:20px}
+
+/* ---------- Solsona ---------- */
+.entorno{background:var(--papel)}
+.entorno-grid{display:grid;gap:44px}
+.distancias{margin-top:0}
+.distancias li:first-child{border-top:1px solid var(--linea)}
+.entorno-foto figcaption{font:italic 400 17px/1.4 var(--serif);color:var(--suave);margin-top:12px}
+.distancias li{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:14px 0;border-bottom:1px solid var(--linea);font-size:16.5px}
+.distancias span{font:italic 400 20px/1 var(--serif);color:var(--terracota);white-space:nowrap}
+
+/* ---------- preguntas ---------- */
+.preguntas{max-width:860px}
+.preguntas details{border-bottom:1px solid var(--linea)}
+.preguntas details:first-of-type{border-top:1px solid var(--linea)}
+.preguntas summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;position:relative;font:500 23px/1.3 var(--serif);color:var(--grafito)}
+.preguntas summary::-webkit-details-marker{display:none}
+.preguntas summary::before,.preguntas summary::after{content:"";position:absolute;right:4px;top:50%;width:16px;height:1px;background:var(--terracota);transition:transform .25s}
+.preguntas summary::after{transform:rotate(90deg)}
+.preguntas details[open] summary::after{transform:rotate(0)}
+.preguntas details p{color:var(--suave);padding-right:40px;margin-top:-4px}
+
+/* ---------- contacto ---------- */
+.contacto{background:var(--grafito);color:#CFC6BA}
+.contacto h2{color:var(--papel)}
+.contacto h2 em{color:var(--terracota-claro)}
+.contacto .etiqueta{color:var(--terracota-claro)}
+.contacto-grid{display:grid;gap:44px}
+.datos{margin-top:34px}
+.dato{display:block;padding:20px 0;border-top:1px solid rgba(255,255,255,.14);text-decoration:none}
+.dato:last-child{border-bottom:1px solid rgba(255,255,255,.14)}
+.dato small{display:block;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:#9D9388;margin-bottom:6px}
+.dato b,.dato address{font:500 clamp(24px,4.5vw,30px)/1.25 var(--serif);font-style:normal;color:var(--papel)}
+a.dato:hover b{color:var(--terracota-claro)}
+.mapa-caja{display:flex;flex-direction:column;min-height:360px;background:var(--grafito-2)}
+.mapa-caja iframe{border:0;width:100%;flex:1;min-height:360px;filter:grayscale(.6) contrast(1.05)}
+.mapa-caja .enlace{color:var(--papel);align-self:flex-start;margin-top:20px}
+
+.pie{background:#171512;color:#8E857B;font-size:13.5px;letter-spacing:.04em;padding:30px 0 112px}
+.pie .caja{display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:space-between}
+.pie a{text-decoration:none}
+
+/* ---------- barra inferior móvil ---------- */
+.barra-movil{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1.25fr 1fr;
+  background:var(--grafito);padding-bottom:env(safe-area-inset-bottom);
+  transition:transform .3s ease;
+}
+.barra-movil.oculta{transform:translateY(110%)}
+.barra-movil a{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;text-decoration:none;color:var(--papel);font:500 16px/1 var(--sans);letter-spacing:.02em}
+.barra-movil a:first-child{background:var(--terracota)}
+
+/* ---------- aparición ---------- */
+.js .aparece{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .aparece.visto{opacity:1;transform:none}
+
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--terracota);outline-offset:4px}
+
+/* ==================== tablet ==================== */
+@media (min-width:700px){
+  .caja{padding:0 40px}
+  .seccion{padding:112px 0}
+  .portada-foto{height:min(56vh,520px)}
+  .portada-texto{margin:-110px 40px 0;padding:48px 48px 44px;max-width:640px}
+  .pasos{grid-template-columns:repeat(3,1fr);gap:32px}
+  .cab-tel{width:auto;height:auto;border:0;border-radius:0}
+  .cab-reservar{display:inline-flex;min-height:44px;padding:0 20px;font-size:15px}
+  .cab-tel .texto{display:inline}
+  .lista-hab{grid-template-columns:1fr 1fr;gap:56px 32px}
+  .ventajas{grid-template-columns:repeat(3,1fr);gap:36px}
+  .ventaja,.ventaja:last-child{border-bottom:0}
+  .formulario{padding:44px 40px}
+  .resenas{grid-auto-columns:46%;margin:0 -40px;padding:0 40px 12px}
+  .lista-serv{columns:2}
+}
+
+/* ==================== ordenador ==================== */
+@media (min-width:1040px){
+  body{font-size:17.5px}
+  .seccion{padding:140px 0}
+  .cabecera .caja{height:80px}
+  .menu{display:flex;gap:34px}
+  .menu a{text-decoration:none;font-size:12.5px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--texto);padding:6px 0;border-bottom:1px solid transparent;transition:border-color .2s}
+  .menu a:hover{border-bottom-color:var(--terracota)}
+
+  .portada{display:grid;grid-template-columns:1fr 1fr;height:clamp(640px,calc(100vh - 80px),880px);padding-bottom:0}
+  .portada-foto{order:2;height:auto;position:relative}
+  .portada-foto picture{position:absolute;inset:0}
+  .portada .lead{font-size:18px}
+  .portada-texto{
+    margin:0;max-width:none;box-shadow:none;background:transparent;
+    display:flex;flex-direction:column;justify-content:center;
+    padding:60px 48px 60px max(40px,calc((100vw - var(--max))/2 + 40px));
+  }
+  .portada .lead{max-width:44ch}
+  .botones .btn{flex:0 0 auto}
+  .portada .botones .btn{padding:0 22px}
+
+  .cab-seccion{grid-template-columns:1fr 1fr;align-items:end;gap:64px;margin-bottom:72px}
+  .lista-hab{grid-template-columns:repeat(3,1fr);gap:40px}
+  .lista-hab .hab:nth-child(2){margin-top:72px}
+
+  .directa-grid{display:grid;grid-template-columns:5fr 7fr;gap:96px;align-items:start}
+  .ventajas{grid-template-columns:1fr;gap:0;margin:0}
+  .ventaja:last-child{border-bottom:1px solid rgba(255,255,255,.14)}
+  .directa .botones{margin-top:40px}
+
+  .consulta-grid{grid-template-columns:5fr 6fr;gap:96px;align-items:center}
+  .formulario{padding:52px}
+
+  .resenas{grid-auto-flow:row;grid-template-columns:repeat(4,1fr);overflow:visible;margin:0;padding:0;gap:20px}
+  .puntos{display:none}
+
+  .servicios-grid{grid-template-columns:6fr 5fr;gap:96px;align-items:center}
+  .servicios-foto picture{aspect-ratio:4/3}
+  .lista-serv{columns:1}
+
+  .entorno-grid{grid-template-columns:6fr 5fr;gap:96px;align-items:center}
+  .contacto-grid{grid-template-columns:5fr 6fr;gap:96px;align-items:stretch}
+
+  .barra-movil{display:none}
+  .pie{padding-bottom:30px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none!important}
+  .js .aparece{opacity:1;transform:none}
+}
+</style>
+</head>
+
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-tel" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M3.5 20.5l1.2-4.3A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.6c.2 2.9 2.5 5.3 5.5 5.7l1-1.2-1.8-.9-.8.8c-1-.4-1.9-1.3-2.3-2.3l.8-.8-.9-1.8z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
+  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M2 9a15 15 0 0 1 20 0"/><path d="M12 19.5h.01"/></symbol>
+  <symbol id="i-clima" viewBox="0 0 24 24"><path d="M12 2v20M4.9 4.9l14.2 14.2M2 12h20M4.9 19.1 19.1 4.9"/></symbol>
+  <symbol id="i-bano" viewBox="0 0 24 24"><path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5zM6 12V5a2 2 0 0 1 3.5-1.3M7 20l-1 2M17 20l1 2"/></symbol>
+  <symbol id="i-tv" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="m8 2 4 4 4-4"/></symbol>
+  <symbol id="i-cafe" viewBox="0 0 24 24"><path d="M17 8h1a4 4 0 0 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4zM7 2v2M11 2v2M15 2v2"/></symbol>
+  <symbol id="i-parking" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 17V7h4a3 3 0 0 1 0 6H9"/></symbol>
+  <symbol id="i-grupo" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M21.5 20a6.5 6.5 0 0 0-4-6"/></symbol>
+  <symbol id="i-mapa" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+</svg>
+
+<header class="cabecera" id="cabecera">
+  <div class="caja">
+    <a class="marca" href="#inicio" aria-label="Hotel Solsona Centre, inicio">
+      <small>Hotel</small><span>Solsona Centre</span>
+    </a>
+    <nav class="menu" aria-label="Secciones">
+      <a href="#habitaciones">Habitaciones</a>
+      <a href="#reservar">Cómo reservar</a>
+      <a href="#opiniones">Opiniones</a>
+      <a href="#solsona">Solsona</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="cab-acciones">
+      <a class="cab-tel" href="tel:+34650464032" data-evento="llamada-cabecera">
+        <svg class="i"><use href="#i-tel"/></svg><span class="texto">650 464 032</span><span class="sr">Llamar al hotel</span>
+      </a>
+      <a class="btn btn-lleno cab-reservar" href="#reservar">Reservar</a>
+    </div>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <!-- ================= PORTADA ================= -->
+  <section class="portada">
+    <div class="portada-foto">
+      <picture>
+        <source srcset="fachada.webp" type="image/webp">
+        <img src="fachada.jpg" width="1080" height="1440" alt="Fachada del Hotel Solsona Centre, con su entrada en color terracota, en el Carrer Àngel Guimerà de Solsona" fetchpriority="high">
+      </picture>
+    </div>
+    <div class="portada-texto">
+      <h1><span>Solsona · Lleida</span>Hotel Solsona <em>Centre</em></h1>
+      <p class="subtitulo">Un hotel familiar en el corazón de Solsona</p>
+      <div class="botones" id="botones-portada">
+        <a class="btn btn-lleno" href="tel:+34650464032" data-evento="llamada-portada"><svg class="i"><use href="#i-tel"/></svg> Llamar · 650 464 032</a>
+        <a class="btn btn-wa" href="https://wa.me/34650464032?text=Hola%2C%20quer%C3%ADa%20consultar%20disponibilidad%20en%20el%20Hotel%20Solsona%20Centre." target="_blank" rel="noopener" data-evento="whatsapp-portada"><svg class="i"><use href="#i-wa"/></svg> Reservar por WhatsApp</a>
+      </div>
+      <p class="tarifa"><svg class="i"><use href="#i-check"/></svg> Mejor tarifa reservando directamente con el hotel</p>
+      <p class="lead">A cinco minutos a pie del casco medieval y a media hora de Port del Comte. Habitaciones tranquilas y trato cercano.</p>
+    </div>
+  </section>
+
+  <!-- ================= CÓMO RESERVAR ================= -->
+  <section class="pasos-banda" id="reservar" aria-label="Cómo reservar">
+    <ol class="caja pasos">
+      <li class="paso"><div><b>Llámanos o escríbenos</b><span>Al <a href="tel:+34650464032">650 464 032</a>, por teléfono o <a href="https://wa.me/34650464032" target="_blank" rel="noopener">WhatsApp</a>.</span></div></li>
+      <li class="paso"><div><b>Te damos precio al momento</b><span>Disponibilidad y tarifa para tus fechas.</span></div></li>
+      <li class="paso"><div><b>Reserva confirmada</b><span>Sin registros ni formularios. Llamadas hasta las 21:00.</span></div></li>
+    </ol>
+  </section>
+
+  <!-- ================= BIENVENIDA ================= -->
+  <section class="seccion bienvenida">
+    <div class="caja">
+      <div class="bienvenida-grid">
+
+        <div>
+          <span class="etiqueta">Bienvenidos</span>
+          <h2>Descansar bien, <em>sin complicaciones</em></h2>
+          <p class="lead" style="margin-top:26px">Somos un hotel pequeño y familiar. Aquí te atiende en persona quien lleva la casa: te recomendamos dónde comer, qué ver y cuál es la habitación que mejor te encaja.</p>
+          <p>Habitaciones sencillas y bien cuidadas, todas con baño privado, climatización y wifi. Un lugar cómodo desde el que salir andando al casco antiguo o subir a la montaña.</p>
+          <p class="firma">— La familia del Solsona Centre</p>
+        </div>
+      </div>
+      <div class="cifras aparece">
+        <div class="cifra"><b>5 min</b><span>al casco antiguo</span></div>
+        <div class="cifra"><b>30 km</b><span>a Port del Comte</span></div>
+        <div class="cifra"><b>4,3/5</b><span>en TripAdvisor</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HABITACIONES ================= -->
+  <section class="seccion habitaciones" id="habitaciones">
+    <div class="caja">
+      <div class="cab-seccion">
+        <div>
+          <span class="etiqueta">Habitaciones</span>
+          <h2>Tres maneras <em>de quedarse</em></h2>
+        </div>
+        <p class="lead">Todas con baño privado, aire acondicionado, calefacción, televisión y wifi gratuito. El precio varía según la temporada: pregúntanos por tus fechas.</p>
+      </div>
+
+      <div class="lista-hab">
+        <article class="hab aparece">
+          <picture><source srcset="doble.webp" type="image/webp"><img src="doble.jpg" width="908" height="681" alt="Habitación doble con cama de matrimonio" loading="lazy"></picture>
+          <span class="hab-num">01</span>
+          <h3>Doble de matrimonio</h3>
+          <p>Cama de matrimonio, mesitas, armario y baño con secador. La favorita de las parejas.</p>
+          <ul class="hab-datos"><li>2 personas</li><li>Baño privado</li><li>Climatización</li></ul>
+          <a class="enlace" href="https://wa.me/34650464032?text=Hola%2C%20quer%C3%ADa%20precio%20para%20una%20habitaci%C3%B3n%20doble%20de%20matrimonio." target="_blank" rel="noopener" data-evento="whatsapp-doble"><svg class="i"><use href="#i-wa"/></svg> Pedir precio por WhatsApp <svg class="i"><use href="#i-flecha"/></svg></a>
+        </article>
+
+        <article class="hab aparece">
+          <picture><source srcset="twin.webp" type="image/webp"><img src="twin.jpg" width="908" height="681" alt="Habitación doble con dos camas individuales" loading="lazy"></picture>
+          <span class="hab-num">02</span>
+          <h3>Doble con dos camas</h3>
+          <p>Dos camas individuales, escritorio y baño privado. Para amigos, compañeros de trabajo o familia.</p>
+          <ul class="hab-datos"><li>2 personas</li><li>Escritorio</li><li>Baño privado</li></ul>
+          <a class="enlace" href="https://wa.me/34650464032?text=Hola%2C%20quer%C3%ADa%20precio%20para%20una%20habitaci%C3%B3n%20doble%20con%20dos%20camas." target="_blank" rel="noopener" data-evento="whatsapp-twin"><svg class="i"><use href="#i-wa"/></svg> Pedir precio por WhatsApp <svg class="i"><use href="#i-flecha"/></svg></a>
+        </article>
+
+        <article class="hab aparece">
+          <picture><source srcset="individual.webp" type="image/webp"><img src="individual.jpg" width="1000" height="750" alt="Habitación individual con escritorio" loading="lazy"></picture>
+          <span class="hab-num">03</span>
+          <h3>Individual</h3>
+          <p>Cama individual, escritorio junto a la ventana y baño privado. Ideal para una escapada o un viaje de trabajo.</p>
+          <ul class="hab-datos"><li>1 persona</li><li>Escritorio</li><li>Wifi</li></ul>
+          <a class="enlace" href="https://wa.me/34650464032?text=Hola%2C%20quer%C3%ADa%20precio%20para%20una%20habitaci%C3%B3n%20individual." target="_blank" rel="noopener" data-evento="whatsapp-individual"><svg class="i"><use href="#i-wa"/></svg> Pedir precio por WhatsApp <svg class="i"><use href="#i-flecha"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESERVA DIRECTA ================= -->
+  <section class="seccion directa" id="reserva-directa">
+    <div class="caja directa-grid">
+      <div>
+        <span class="etiqueta">Reserva directa</span>
+        <h2>Reserva directa, <em>mejor tarifa</em></h2>
+        <p class="lead" style="margin-top:26px">También nos encontrarás en Booking. Pero si reservas directamente con nosotros, por teléfono o WhatsApp, no hay comisión de intermediario y podemos ofrecerte un precio mejor. Así de sencillo.</p>
+        <div class="botones">
+          <a class="btn btn-lleno" href="tel:+34650464032" data-evento="llamada-directa"><svg class="i"><use href="#i-tel"/></svg> Llamar</a>
+          <a class="btn btn-linea" href="#consulta"><svg class="i"><use href="#i-wa"/></svg> Consultar por WhatsApp</a>
+        </div>
+      </div>
+      <ol class="ventajas">
+        <li class="ventaja aparece"><b><i>i.</i>Mejor precio</b><p>Al no haber intermediario, te ofrecemos nuestra mejor tarifa para tus fechas.</p></li>
+        <li class="ventaja aparece"><b><i>ii.</i>Trato directo</b><p>Hablas con quien lleva el hotel, no con un centro de llamadas. Te aconsejamos la habitación que mejor te va.</p></li>
+        <li class="ventaja aparece"><b><i>iii.</i>Flexibilidad</b><p>Llegadas tarde, grupos o estancias largas: se habla y se arregla.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ================= CONSULTA (formulario → WhatsApp) ================= -->
+  <section class="seccion" id="consulta">
+    <div class="caja consulta-grid">
+      <div>
+        <span class="etiqueta">Disponibilidad</span>
+        <h2>Cuéntanos <em>tus fechas</em></h2>
+        <p class="lead" style="margin-top:26px">Rellena el formulario y se abrirá WhatsApp con el mensaje ya escrito. Te respondemos con precio y disponibilidad, sin registros ni tarjetas.</p>
+      </div>
+      <form class="formulario aparece" id="formulario" novalidate>
+        <div class="campos">
+          <div class="campo"><label for="entrada">Llegada</label><input type="date" id="entrada" name="entrada" required></div>
+          <div class="campo"><label for="salida">Salida</label><input type="date" id="salida" name="salida" required></div>
+          <div class="campo">
+            <label for="personas">Personas</label>
+            <select id="personas" name="personas"><option>1</option><option selected>2</option><option>3</option><option>4</option><option value="5 o más">5 o más</option></select>
+          </div>
+          <div class="campo">
+            <label for="tipo">Habitación</label>
+            <select id="tipo" name="tipo">
+              <option value="">Sin preferencia</option>
+              <option>Doble de matrimonio</option>
+              <option>Doble con dos camas</option>
+              <option>Individual</option>
+              <option>Varias habitaciones</option>
+            </select>
+          </div>
+          <div class="campo ancho"><label for="nombre">Nombre (opcional)</label><input type="text" id="nombre" name="nombre" autocomplete="given-name"></div>
+        </div>
+        <p class="error" id="error" role="alert"></p>
+        <button class="btn btn-lleno" type="submit" data-evento="whatsapp-formulario"><svg class="i"><use href="#i-wa"/></svg> Enviar por WhatsApp</button>
+        <p class="form-pie">¿Prefieres hablar? <a href="tel:+34650464032" data-evento="llamada-formulario">650 464 032</a></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= OPINIONES =================
+       Para añadir una reseña de Booking: copia un bloque <figure class="resena">…</figure>
+       y pega el texto tal cual lo escribió el cliente, con su nombre, la plataforma y la fecha. -->
+  <section class="seccion opiniones" id="opiniones">
+    <div class="caja">
+      <figure class="destacada" style="margin-left:auto;margin-right:auto">
+        <span class="etiqueta">Opiniones</span>
+        <blockquote>Las habitaciones son limpias, modernas y espaciosas. El hotel está a 5 minutos andando del centro.</blockquote>
+        <figcaption class="autor"><b>Glori</b> · TripAdvisor · 2020</figcaption>
+      </figure>
+
+      <p class="notas">
+        <span><b>4,3/5</b>TripAdvisor</span>
+        <span><b>8,3/10</b>Atrápalo</span>
+        <span><b>8,1/10</b>Central de Reservas</span>
+      </p>
+
+      <div class="resenas" id="resenas">
+        <figure class="resena">
+          <blockquote>«La atención y el trato del personal muy agradable, excelente.»</blockquote>
+          <figcaption><b>Antonio</b>Atrápalo</figcaption>
+        </figure>
+        <figure class="resena">
+          <blockquote>«Las habitaciones son amplias, cómodas y bien climatizadas, garantizando un buen descanso.»</blockquote>
+          <figcaption><b>Xavi D.</b>TripAdvisor · 2022</figcaption>
+        </figure>
+        <figure class="resena">
+          <blockquote lang="ca">«Molt bona ubicació per anar a Port del Comte, atenció del personal immillorable.»</blockquote>
+          <figcaption><b>Anna</b>Atrápalo</figcaption>
+        </figure>
+        <figure class="resena">
+          <blockquote>«Hotel muy bien situado, con posibilidad de aparcar justo en frente. Habitaciones amplias y limpias.»</blockquote>
+          <figcaption><b>Cristina</b>TripAdvisor · 2020</figcaption>
+        </figure>
+      </div>
+      <div class="puntos" data-para="resenas" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICIOS ================= -->
+  <section class="seccion" id="servicios">
+    <div class="caja servicios-grid">
+      <div class="servicios-foto aparece">
+        <picture><source srcset="cafeteria.webp" type="image/webp"><img src="cafeteria.jpg" width="1024" height="460" alt="Bar y cafetería del hotel" loading="lazy"></picture>
+      </div>
+      <div>
+        <span class="etiqueta">Servicios</span>
+        <h2>Lo necesario, <em>bien hecho</em></h2>
+        <p class="lead" style="margin-top:22px">El bar del hotel abre para desayunar y para tomar algo por la tarde.</p>
+        <ul class="lista-serv">
+          <li><svg class="i"><use href="#i-wifi"/></svg>Wifi gratuito en todo el hotel</li>
+          <li><svg class="i"><use href="#i-clima"/></svg>Aire acondicionado y calefacción</li>
+          <li><svg class="i"><use href="#i-bano"/></svg>Baño privado con secador</li>
+          <li><svg class="i"><use href="#i-tv"/></svg>Televisión con canales por satélite</li>
+          <li><svg class="i"><use href="#i-cafe"/></svg>Bar y cafetería</li>
+          <li><svg class="i"><use href="#i-parking"/></svg>Aparcamiento gratuito cerca</li>
+          <li><svg class="i"><use href="#i-grupo"/></svg>Salas independientes para grupos</li>
+          <li><svg class="i"><use href="#i-mapa"/></svg>Información turística de la zona</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SOLSONA ================= -->
+  <section class="seccion entorno" id="solsona">
+    <div class="caja entorno-grid">
+      <div>
+        <span class="etiqueta">El entorno</span>
+        <h2>Solsona, <em>a pie de calle</em></h2>
+        <p class="lead" style="margin-top:26px">Una ciudad medieval de calles estrechas, fuentes y pórticos, capital del Solsonès. Desde el hotel sales andando a la catedral, al museo diocesano y a los bares del casco antiguo.</p>
+        <p>Buen punto de partida para esquiar en Port del Comte, hacer senderismo y BTT, vivir el Carnaval o recorrer las bodegas de la zona.</p>
+        <ul class="distancias" style="margin-top:34px">
+          <li>Casco antiguo y catedral <span>5 min a pie</span></li>
+          <li>Pantano de la Llosa del Cavall <span>18 km</span></li>
+          <li>Castillo de Cardona <span>20 km</span></li>
+          <li>Estación de esquí Port del Comte <span>30 km</span></li>
+          <li>Barcelona <span>1 h 45 min</span></li>
+        </ul>
+
+      </div>
+      <figure class="entorno-foto aparece" style="margin:0">
+        <picture><source srcset="fachada-entrada.webp" type="image/webp"><img src="fachada-entrada.jpg" width="1000" height="667" alt="Entrada del Hotel Solsona Centre, con el rótulo sobre la puerta terracota" loading="lazy"></picture>
+        <figcaption>Busca la entrada terracota: Carrer Àngel Guimerà, 3</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================= PREGUNTAS ================= -->
+  <section class="seccion" id="preguntas">
+    <div class="caja">
+      <span class="etiqueta">Preguntas frecuentes</span>
+      <h2 style="margin-bottom:40px">Antes <em>de venir</em></h2>
+      <div class="preguntas">
+        <details>
+          <summary>¿Por qué sale mejor reservar directamente?</summary>
+          <p>Las plataformas de reserva, como Booking, cobran al hotel una comisión por su servicio. Si reservas directamente por teléfono o WhatsApp, esa comisión no existe y podemos ofrecerte un precio mejor.</p>
+        </details>
+        <details>
+          <summary>¿Hasta qué hora puedo llamar?</summary>
+          <p>Atendemos llamadas hasta las 21:00. Si es más tarde, escríbenos por WhatsApp al 650 464 032 y te contestamos en cuanto podamos.</p>
+        </details>
+        <details>
+          <summary>¿A qué hora es la entrada y la salida?</summary>
+          <p>La entrada es a partir de las 13:00 y la salida hasta las 11:00. Si llegas tarde, avísanos y lo organizamos.</p>
+        </details>
+        <details>
+          <summary>¿Dónde puedo aparcar?</summary>
+          <p>Hay aparcamiento gratuito muy cerca del hotel.</p>
+        </details>
+        <details>
+          <summary>¿Se admiten mascotas?</summary>
+          <p>Lo sentimos, el hotel no admite mascotas.</p>
+        </details>
+        <details>
+          <summary>¿Aceptáis grupos?</summary>
+          <p>Sí. Tenemos salas independientes para grupos. Llámanos y te preparamos un precio para todo el grupo.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACTO ================= -->
+  <section class="seccion contacto" id="contacto">
+    <div class="caja contacto-grid">
+      <div>
+        <span class="etiqueta">Reservas y contacto</span>
+        <h2>Te esperamos <em>en Solsona</em></h2>
+        <div class="datos">
+          <a class="dato" href="tel:+34650464032" data-evento="llamada-contacto"><small>Teléfono · hasta las 21:00</small><b>650 464 032</b></a>
+          <a class="dato" href="https://wa.me/34650464032?text=Hola%2C%20quer%C3%ADa%20consultar%20disponibilidad." target="_blank" rel="noopener" data-evento="whatsapp-contacto"><small>WhatsApp</small><b>Escríbenos</b></a>
+          <div class="dato"><small>Dirección</small><address>Carrer Àngel Guimerà, 3<br>25280 Solsona, Lleida</address></div>
+          <div class="dato"><small>Horarios</small><b>Entrada 13:00 · Salida 11:00</b></div>
+        </div>
+      </div>
+      <div class="mapa-caja">
+        <iframe title="Mapa de situación del Hotel Solsona Centre" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Hotel%20Solsona%20Centre%2C%20Carrer%20%C3%80ngel%20Guimer%C3%A0%203%2C%2025280%20Solsona&z=16&output=embed"></iframe>
+        <a class="enlace" href="https://www.google.com/maps/dir/?api=1&destination=Carrer%20%C3%80ngel%20Guimer%C3%A0%203%2C%2025280%20Solsona" target="_blank" rel="noopener">Cómo llegar <svg class="i"><use href="#i-flecha"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="caja">
+    <span>© <span id="anio">2026</span> Hotel Solsona Centre · Carrer Àngel Guimerà, 3 · 25280 Solsona (Lleida)</span>
+    <a href="tel:+34650464032">650 464 032</a>
+  </div>
+</footer>
+
+<nav class="barra-movil oculta" id="barra-movil" aria-label="Reservar">
+  <a href="tel:+34650464032" data-evento="llamada-barra"><svg class="i"><use href="#i-tel"/></svg> Llamar</a>
+  <a href="https://wa.me/34650464032?text=Hola%2C%20quer%C3%ADa%20consultar%20disponibilidad%20en%20el%20Hotel%20Solsona%20Centre." target="_blank" rel="noopener" data-evento="whatsapp-barra" class="wa"><svg class="i"><use href="#i-wa"/></svg> WhatsApp</a>
+</nav>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@graph":[
+    {
+      "@type":"Hotel",
+      "@id":"https://didaco555.github.io/hotel-solsona-centre-web/#hotel",
+      "name":"Hotel Solsona Centre",
+      "description":"Hotel familiar de 2 estrellas en el centro de Solsona, en el Prepirineo de Lleida. Habitaciones con baño privado, wifi gratuito, aire acondicionado y calefacción. Mejor tarifa reservando directamente.",
+      "url":"https://didaco555.github.io/hotel-solsona-centre-web/",
+      "image":["https://didaco555.github.io/hotel-solsona-centre-web/fachada.jpg","https://didaco555.github.io/hotel-solsona-centre-web/individual.jpg","https://didaco555.github.io/hotel-solsona-centre-web/doble.jpg"],
+      "telephone":"+34650464032",
+      "priceRange":"€",
+      "starRating":{"@type":"Rating","ratingValue":"2"},
+      "address":{"@type":"PostalAddress","streetAddress":"Carrer Àngel Guimerà, 3","addressLocality":"Solsona","addressRegion":"Lleida","postalCode":"25280","addressCountry":"ES"},
+      "geo":{"@type":"GeoCoordinates","latitude":41.99459,"longitude":1.51840},
+      "hasMap":"https://www.google.com/maps/search/?api=1&query=Hotel%20Solsona%20Centre%20Solsona",
+      "checkinTime":"13:00",
+      "checkoutTime":"11:00",
+      "petsAllowed":false,
+      "amenityFeature":[
+        {"@type":"LocationFeatureSpecification","name":"Wifi gratuito","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Aire acondicionado","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Calefacción","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Aparcamiento gratuito cercano","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Bar y cafetería","value":true},
+        {"@type":"LocationFeatureSpecification","name":"Salas para grupos","value":true}
+      ]
+    },
+    {
+      "@type":"FAQPage",
+      "mainEntity":[
+        {"@type":"Question","name":"¿Por qué sale mejor reservar directamente?","acceptedAnswer":{"@type":"Answer","text":"Las plataformas de reserva, como Booking, cobran al hotel una comisión por su servicio. Si reservas directamente por teléfono o WhatsApp, esa comisión no existe y podemos ofrecerte un precio mejor."}},
+        {"@type":"Question","name":"¿Hasta qué hora puedo llamar?","acceptedAnswer":{"@type":"Answer","text":"Atendemos llamadas hasta las 21:00. Si es más tarde, escríbenos por WhatsApp al 650 464 032."}},
+        {"@type":"Question","name":"¿A qué hora es la entrada y la salida?","acceptedAnswer":{"@type":"Answer","text":"La entrada es a partir de las 13:00 y la salida hasta las 11:00."}},
+        {"@type":"Question","name":"¿Dónde puedo aparcar?","acceptedAnswer":{"@type":"Answer","text":"Hay aparcamiento gratuito muy cerca del hotel."}},
+        {"@type":"Question","name":"¿Se admiten mascotas?","acceptedAnswer":{"@type":"Answer","text":"No, el hotel no admite mascotas."}},
+        {"@type":"Question","name":"¿Aceptáis grupos?","acceptedAnswer":{"@type":"Answer","text":"Sí. Tenemos salas independientes para grupos."}}
+      ]
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  document.documentElement.classList.add('js');
+  var TEL = '34650464032';
+  document.getElementById('anio').textContent = new Date().getFullYear();
+
+  var cab = document.getElementById('cabecera');
+  function alScroll(){ cab.classList.toggle('con-linea', window.scrollY > 8); }
+  window.addEventListener('scroll', alScroll, {passive:true}); alScroll();
+
+  var aparecen = document.querySelectorAll('.aparece');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('visto'); io.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -8% 0px'});
+    aparecen.forEach(function(el){ io.observe(el); });
+    // La barra inferior del móvil aparece cuando los botones de la portada ya no se ven,
+    // y se esconde al llegar al bloque de contacto (que ya tiene los suyos).
+    var barra = document.getElementById('barra-movil');
+    var visibles = {portada:true, contacto:false};
+    function actualizar(){ barra.classList.toggle('oculta', visibles.portada || visibles.contacto); }
+    new IntersectionObserver(function(es){ es.forEach(function(e){ visibles.portada = e.isIntersecting; }); actualizar(); })
+      .observe(document.getElementById('botones-portada'));
+    new IntersectionObserver(function(es){ es.forEach(function(e){ visibles.contacto = e.isIntersecting; }); actualizar(); }, {threshold:.12})
+      .observe(document.getElementById('contacto'));
+  } else {
+    aparecen.forEach(function(el){ el.classList.add('visto'); });
+  }
+
+  document.querySelectorAll('.puntos').forEach(function(p){
+    var c = document.getElementById(p.dataset.para), n = c.children.length;
+    for (var i = 0; i < n; i++) p.appendChild(document.createElement('span'));
+    function marcar(){
+      var ancho = c.children[0].getBoundingClientRect().width + 16;
+      var idx = Math.max(0, Math.min(n - 1, Math.round(c.scrollLeft / ancho)));
+      if (c.scrollLeft + c.clientWidth >= c.scrollWidth - 4) idx = n - 1;
+      [].forEach.call(p.children, function(s, j){ s.classList.toggle('activo', j === idx); });
+    }
+    c.addEventListener('scroll', marcar, {passive:true}); marcar();
+  });
+
+  var f = document.getElementById('formulario');
+  var ent = document.getElementById('entrada'), sal = document.getElementById('salida');
+  function iso(d){ return d.toISOString().slice(0,10); }
+  var hoy = new Date(); hoy.setMinutes(hoy.getMinutes() - hoy.getTimezoneOffset());
+  ent.min = iso(hoy); sal.min = iso(new Date(hoy.getTime() + 864e5));
+  ent.addEventListener('change', function(){
+    if (!ent.value) return;
+    var sig = new Date(ent.value); sig.setDate(sig.getDate() + 1);
+    sal.min = iso(sig);
+    if (!sal.value || sal.value <= ent.value) sal.value = iso(sig);
+  });
+  function bonita(v){
+    var p = v.split('-');
+    var m = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+    return parseInt(p[2],10) + ' de ' + m[parseInt(p[1],10)-1];
+  }
+  f.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var err = document.getElementById('error'); err.textContent = '';
+    if (!ent.value || !sal.value) { err.textContent = 'Indica la fecha de llegada y la de salida.'; return; }
+    if (sal.value <= ent.value) { err.textContent = 'La salida tiene que ser posterior a la llegada.'; return; }
+    var noches = Math.round((new Date(sal.value) - new Date(ent.value)) / 864e5);
+    var nombre = f.nombre.value.trim(), tipo = f.tipo.value;
+    var msg = 'Hola' + (nombre ? ', soy ' + nombre : '') + '. Quería precio y disponibilidad en el Hotel Solsona Centre:\n' +
+      '• Llegada: ' + bonita(ent.value) + '\n' +
+      '• Salida: ' + bonita(sal.value) + ' (' + noches + (noches === 1 ? ' noche' : ' noches') + ')\n' +
+      '• Personas: ' + f.personas.value + (tipo ? '\n• Habitación: ' + tipo : '') + '\nGracias.';
+    window.open('https://wa.me/' + TEL + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+  });
+
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('[data-evento]');
+    if (a && typeof window.gtag === 'function') window.gtag('event', a.dataset.evento);
+  });
+})();
+</script>
+
+</body>
+</html>
