@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://didaco555.github.io/hotel-solsona-centre-web/sitemap.xml
+Sitemap: https://hotelsolsonacentre.com/sitemap.xml
