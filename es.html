@@ -180,6 +180,11 @@ svg.i{width:1.15em;height:1.15em;flex:none;fill:none;stroke:currentColor;stroke-
 .paso b{display:block;font:500 23px/1.2 var(--serif);color:var(--grafito)}
 .paso span{font-size:15.5px;color:var(--suave)}
 .paso a{color:var(--grafito);font-weight:500}
+.horario{display:flex;width:fit-content;align-items:center;gap:8px;margin-top:10px;padding:7px 12px;
+  background:rgba(165,67,46,.09);border-left:2px solid var(--terracota);color:var(--terracota-2);
+  font-weight:500;font-size:15.5px;line-height:1.3}
+.horario svg.i{width:17px;height:17px;stroke-width:1.8}
+.horario-c{color:var(--terracota-claro);font-weight:500}
 
 /* ---------- cifras ---------- */
 .cifras{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);margin-top:64px}
@@ -433,6 +438,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   <symbol id="f-ca" viewBox="0 0 18 18"><rect width="18" height="18" fill="#FCDD09"/><path fill="#DA121A" d="M0 2h18v2H0zM0 6h18v2H0zM0 10h18v2H0zM0 14h18v2H0z"/></symbol>
   <symbol id="f-es" viewBox="0 0 18 18"><rect width="18" height="18" fill="#AA151B"/><rect y="4.5" width="18" height="9" fill="#F1BF00"/></symbol>
   <symbol id="f-gb" viewBox="15 0 30 30"><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="2.4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></symbol>
+  <symbol id="i-reloj" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
   <symbol id="i-mapa" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
 </svg>
 
@@ -489,7 +495,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
     <ol class="caja pasos">
       <li class="paso"><div><b>Teléfono o WhatsApp</b><span><a href="tel:+34650464032">650 464 032</a>, por teléfono o <a href="https://wa.me/34650464032" target="_blank" rel="noopener">WhatsApp</a>.</span></div></li>
       <li class="paso"><div><b>Precio y disponibilidad</b><span>Información inmediata para las fechas solicitadas.</span></div></li>
-      <li class="paso"><div><b>Confirmación</b><span>Sin registros ni formularios. Atención telefónica hasta las 21:00.</span></div></li>
+      <li class="paso"><div><b>Confirmación</b><span>Sin registros ni formularios.<strong class="horario"><svg class="i" aria-hidden="true"><use href="#i-reloj"/></svg>Atención telefónica hasta las 21:00</strong></span></div></li>
     </ol>
   </section>
 
@@ -735,7 +741,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
         <span class="etiqueta">Contacto</span>
         <h2>Reservas <em>y contacto</em></h2>
         <div class="datos">
-          <a class="dato" href="tel:+34650464032" data-evento="llamada-contacto"><small>Teléfono · hasta las 21:00</small><b>650 464 032</b></a>
+          <a class="dato" href="tel:+34650464032" data-evento="llamada-contacto"><small>Teléfono · <span class="horario-c">hasta las 21:00</span></small><b>650 464 032</b></a>
           <a class="dato" href="https://wa.me/34650464032?text=Hola%2C%20quer%C3%ADa%20consultar%20disponibilidad." target="_blank" rel="noopener" data-evento="whatsapp-contacto"><small>WhatsApp</small><b>Enviar mensaje</b></a>
           <div class="dato"><small>Dirección</small><address>Carrer Àngel Guimerà, 3<br>25280 Solsona, Lleida</address></div>
           <div class="dato"><small>Horarios</small><b>Entrada 13:00 · Salida 11:00</b></div>
