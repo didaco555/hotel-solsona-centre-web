@@ -315,11 +315,21 @@ svg.i{width:1.15em;height:1.15em;flex:none;fill:none;stroke:currentColor;stroke-
 a.dato:hover b{color:var(--terracota-claro)}
 .mapa-caja{display:flex;flex-direction:column;min-height:360px;background:var(--grafito-2)}
 .mapa-caja iframe{border:0;width:100%;flex:1;min-height:360px;filter:grayscale(.6) contrast(1.05)}
+.mapa-cargar{flex:1;min-height:360px;width:100%;border:1px solid rgba(255,255,255,.14);cursor:pointer;
+  background:var(--grafito-2) radial-gradient(circle at 50% 42%,rgba(233,201,189,.10),transparent 60%);
+  color:var(--papel);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:24px;
+  font-family:var(--sans);transition:background-color .2s}
+.mapa-cargar:hover{background-color:#322d28}
+.mapa-cargar svg.i{width:34px;height:34px;color:var(--terracota-claro);stroke-width:1.4}
+.mapa-t{font:500 26px/1 var(--serif)}
+.mapa-n{font-size:13.5px;color:#9D9388;max-width:30ch;text-align:center;line-height:1.45}
 .mapa-caja .enlace{color:var(--papel);align-self:flex-start;margin-top:20px}
 
 .pie{background:#171512;color:#8E857B;font-size:13.5px;letter-spacing:.04em;padding:30px 0 112px}
 .pie .caja{display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:space-between}
 .pie a{text-decoration:none}
+.pie .legal{flex-basis:100%;font-size:13px;color:#7F776E}
+.pie .legal a{text-decoration:underline;text-underline-offset:3px}
 
 /* ---------- barra inferior móvil ---------- */
 .barra-movil{
@@ -620,8 +630,8 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
     <div class="caja">
       <figure class="destacada" style="margin-left:auto;margin-right:auto">
         <span class="etiqueta">Reviews</span>
-        <blockquote>Hotel muy bien situado, con posibilidad de aparcar justo en frente. Habitaciones amplias y limpias.</blockquote>
-        <figcaption class="autor"><b>Cristina</b> · TripAdvisor · 2020</figcaption>
+        <blockquote lang="en">A very well located hotel, with parking right in front. Spacious, clean rooms.</blockquote>
+        <figcaption class="autor"><b>Cristina</b> · TripAdvisor · 2020 · translated from Spanish</figcaption>
       </figure>
 
       <p class="notas">
@@ -632,20 +642,20 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 
       <div class="resenas" id="resenas">
         <figure class="resena">
-          <blockquote>«La atención y el trato del personal muy agradable, excelente.»</blockquote>
-          <figcaption><b>Antonio</b>Atrápalo</figcaption>
+          <blockquote>«Very pleasant, excellent attention and service from the staff.»</blockquote>
+          <figcaption><b>Antonio</b>Atrápalo · translated from Spanish</figcaption>
         </figure>
         <figure class="resena">
-          <blockquote>«Las habitaciones son amplias, cómodas y bien climatizadas, garantizando un buen descanso.»</blockquote>
-          <figcaption><b>Xavi D.</b>TripAdvisor · 2022</figcaption>
+          <blockquote>«The rooms are spacious, comfortable and well air-conditioned, ensuring a good night's rest.»</blockquote>
+          <figcaption><b>Xavi D.</b>TripAdvisor · 2022 · translated from Spanish</figcaption>
         </figure>
         <figure class="resena">
-          <blockquote lang="ca">«Molt bona ubicació per anar a Port del Comte, atenció del personal immillorable.»</blockquote>
-          <figcaption><b>Anna</b>Atrápalo</figcaption>
+          <blockquote>«The room was very spacious, with very functional furniture, a flat-screen TV, air conditioning and a very comfortable bed.»</blockquote>
+          <figcaption><b>Alfonso D.</b>TripAdvisor · 2022 · translated from Spanish</figcaption>
         </figure>
         <figure class="resena">
-          <blockquote>«La cama muy amplia y cómoda y el tamaño adecuado.»</blockquote>
-          <figcaption><b>Verified guest</b>Central de Reservas · 2025</figcaption>
+          <blockquote>«A very large, comfortable bed, and the right size.»</blockquote>
+          <figcaption><b>Verified guest</b>Central de Reservas · 2025 · translated from Spanish</figcaption>
         </figure>
       </div>
       <div class="puntos" data-para="resenas" aria-hidden="true"></div>
@@ -748,8 +758,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
         </div>
       </div>
       <div class="mapa-caja">
-        <iframe title="Map showing Hotel Solsona Centre" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          src="https://maps.google.com/maps?q=Hotel%20Solsona%20Centre%2C%20Carrer%20%C3%80ngel%20Guimer%C3%A0%203%2C%2025280%20Solsona&z=16&output=embed"></iframe>
+        <button class="mapa-cargar" type="button" id="mapa-cargar" data-src="https://maps.google.com/maps?q=Hotel%20Solsona%20Centre%2C%20Carrer%20%C3%80ngel%20Guimer%C3%A0%203%2C%2025280%20Solsona&z=16&output=embed" data-titulo="Map showing Hotel Solsona Centre">
+          <svg class="i" aria-hidden="true"><use href="#i-mapa"/></svg>
+          <span class="mapa-t">Show map</span>
+          <span class="mapa-n">When the map is shown, Google may set its own cookies.</span>
+        </button>
         <a class="enlace" href="https://www.google.com/maps/dir/?api=1&destination=Carrer%20%C3%80ngel%20Guimer%C3%A0%203%2C%2025280%20Solsona" target="_blank" rel="noopener">Get directions <svg class="i"><use href="#i-flecha"/></svg></a>
       </div>
     </div>
@@ -761,6 +774,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   <div class="caja">
     <span>© <span id="anio">2026</span> Hotel Solsona Centre · Official website · Carrer Àngel Guimerà, 3 · 25280 Solsona (Lleida)</span>
     <span><a href="tel:+34650464032">650 464 032</a> · <a href="/">Català</a> · <a href="/es.html">Castellano</a> · <a href="/en.html">English</a></span>
+    <span class="legal"><a href="/legal-en.html#avis-legal">Legal notice</a> · <a href="/legal-en.html#privacitat">Privacy</a> · <a href="/legal-en.html#cookies">Cookies</a> · Catalan Tourism Register HCC-000764</span>
   </div>
 </footer>
 
@@ -835,7 +849,6 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   };
   var L = T[document.documentElement.lang] || T.es;
 
-  });
   document.getElementById('anio').textContent = new Date().getFullYear();
 
   var cab = document.getElementById('cabecera');
@@ -902,6 +915,14 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
       '• ' + L.salida + ': ' + bonita(sal.value) + ' (' + noches + (noches === 1 ? L.noche : L.noches) + ')\n' +
       '• ' + L.personas + ': ' + f.personas.options[f.personas.selectedIndex].text + (tipo ? '\n• ' + L.hab + ': ' + f.tipo.options[f.tipo.selectedIndex].text : '') + '\n' + L.gracias;
     window.open('https://wa.me/' + TEL + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+  });
+
+  var bm = document.getElementById('mapa-cargar');
+  if (bm) bm.addEventListener('click', function(){
+    var f = document.createElement('iframe');
+    f.src = bm.dataset.src; f.title = bm.dataset.titulo; f.loading = 'lazy';
+    f.referrerPolicy = 'no-referrer-when-downgrade';
+    bm.replaceWith(f);
   });
 
   document.addEventListener('click', function(e){
