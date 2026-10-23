@@ -38,7 +38,8 @@
 
 <link rel="preload" href="/cormorant-garamond-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/jost-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="/fachada-720.webp" imagesrcset="/fachada-720.webp 720w, /fachada.webp 1080w" imagesizes="(min-width:1040px) 50vw, 100vw" type="image/webp">
+<link rel="preload" as="image" media="(max-width:1039px)" href="/fachada-movil.webp" imagesrcset="/fachada-movil-540.webp 540w, /fachada-movil.webp 800w, /fachada-movil-1200.webp 1200w" imagesizes="100vw" type="image/webp" fetchpriority="high">
+<link rel="preload" as="image" media="(min-width:1040px)" href="/fachada.webp" imagesrcset="/fachada-720.webp 720w, /fachada-800.webp 800w, /fachada.webp 1080w" imagesizes="50vw" type="image/webp" fetchpriority="high">
 
 <style>
 /* Tipografías alojadas en la propia web (más rápido y sin depender de Google) */
@@ -62,7 +63,7 @@
   --grafito:#1F1C19;
   --grafito-2:#2A2622;
   --texto:#3A342E;
-  --suave:#766D63;
+  --suave:#685F56;
   --terracota:#A5432E;
   --terracota-2:#8C3825;
   --terracota-claro:#E9C9BD;
@@ -150,7 +151,7 @@ svg.i{width:1.15em;height:1.15em;flex:none;fill:none;stroke:currentColor;stroke-
 .portada{position:relative;padding-bottom:40px}
 .portada-foto{height:min(42vh,380px);overflow:hidden;background:var(--arena)}
 .portada-foto picture,.portada-foto img{height:100%}
-.portada-foto img{object-fit:cover;object-position:center 42%}
+.portada-foto img{object-fit:cover;object-position:center 50%}
 .portada-texto{
   position:relative;margin:-44px 14px 0;background:var(--papel);
   padding:30px 22px 30px;box-shadow:0 30px 60px -30px rgba(31,28,25,.25);
@@ -328,7 +329,7 @@ a.dato:hover b{color:var(--terracota-claro)}
 .pie{background:#171512;color:#8E857B;font-size:13.5px;letter-spacing:.04em;padding:30px 0 112px}
 .pie .caja{display:flex;flex-wrap:wrap;gap:8px 26px;justify-content:space-between}
 .pie a{text-decoration:none}
-.pie .legal{flex-basis:100%;font-size:13px;color:#7F776E}
+.pie .legal{flex-basis:100%;font-size:13px;color:#9A9187}
 .pie .legal a{text-decoration:underline;text-underline-offset:3px}
 
 /* ---------- barra inferior móvil ---------- */
@@ -344,6 +345,16 @@ a.dato:hover b{color:var(--terracota-claro)}
 /* ---------- aparición ---------- */
 .js .aparece{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
 .js .aparece.visto{opacity:1;transform:none}
+
+.ampliable{cursor:zoom-in}
+.visor{border:0;padding:0;margin:auto;max-width:min(96vw,1200px);max-height:92vh;background:transparent;overflow:visible}
+.visor::backdrop{background:rgba(23,21,18,.9)}
+.visor img{display:block;cursor:zoom-out;width:auto;height:auto;max-width:min(96vw,1200px);max-height:88vh;object-fit:contain;box-shadow:0 20px 60px rgba(0,0,0,.4)}
+.visor-cerrar{position:fixed;top:14px;right:14px;width:46px;height:46px;border-radius:50%;border:0;cursor:pointer;
+  background:rgba(251,249,245,.95);color:var(--grafito);display:grid;place-items:center}
+.visor-cerrar svg{width:20px;height:20px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round}
+.visor[open]{animation:visor-in .25s ease}
+@keyframes visor-in{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
 
 a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--terracota);outline-offset:4px}
 
@@ -379,6 +390,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   .portada{display:grid;grid-template-columns:1fr 1fr;height:clamp(640px,calc(100vh - 80px),880px);padding-bottom:0}
   .portada-foto{order:2;height:auto;position:relative}
   .portada-foto picture{position:absolute;inset:0}
+  .portada-foto img{object-position:center 42%}
   .portada .lead{font-size:18px}
   .portada-texto{
     margin:0;max-width:none;box-shadow:none;background:transparent;
@@ -438,7 +450,6 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   <symbol id="i-wa" viewBox="0 0 24 24"><path d="M3.5 20.5l1.2-4.3A8.5 8.5 0 1 1 8 19.4z"/><path d="M9 8.6c.2 2.9 2.5 5.3 5.5 5.7l1-1.2-1.8-.9-.8.8c-1-.4-1.9-1.3-2.3-2.3l.8-.8-.9-1.8z"/></symbol>
   <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
   <symbol id="i-flecha" viewBox="0 0 24 24"><path d="M4 12h16M14 6l6 6-6 6"/></symbol>
-  <symbol id="i-wifi" viewBox="0 0 24 24"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0M2 9a15 15 0 0 1 20 0"/><path d="M12 19.5h.01"/></symbol>
   <symbol id="i-clima" viewBox="0 0 24 24"><path d="M12 2v20M4.9 4.9l14.2 14.2M2 12h20M4.9 19.1 19.1 4.9"/></symbol>
   <symbol id="i-bano" viewBox="0 0 24 24"><path d="m4 4 2.5 2.5M13.5 6.5a4.95 4.95 0 0 0-7 7M15 5 5 15M14 17v.01M10 16v.01M13 13v.01M16 10v.01M11 20v.01M17 14v.01M20 11v.01"/></symbol>
   <symbol id="i-tv" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="13" rx="2"/><path d="m8 2 4 4 4-4"/></symbol>
@@ -454,7 +465,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 
 <header class="cabecera" id="cabecera">
   <div class="caja">
-    <a class="marca" href="#inicio" aria-label="Hotel Solsona Centre, inicio">
+    <a class="marca" href="#inicio">
       <small>Hotel</small><span>Solsona Centre</span>
     </a>
     <nav class="menu" aria-label="Secciones">
@@ -484,8 +495,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   <section class="portada">
     <div class="portada-foto">
       <picture>
-        <source srcset="/fachada-720.webp 720w, /fachada.webp 1080w" sizes="(min-width:1040px) 50vw, 100vw" type="image/webp">
-        <img src="/fachada.jpg" srcset="/fachada-720.jpg 720w, /fachada.jpg 1080w" sizes="(min-width:1040px) 50vw, 100vw" width="1080" height="1440" alt="Fachada del Hotel Solsona Centre en el Carrer Àngel Guimerà de Solsona" fetchpriority="high">
+        <source media="(max-width:1039px)" srcset="/fachada-movil-540.webp 540w, /fachada-movil.webp 800w, /fachada-movil-1200.webp 1200w" sizes="100vw" type="image/webp">
+        <source media="(max-width:1039px)" srcset="/fachada-movil-540.jpg 540w, /fachada-movil.jpg 800w, /fachada-movil-1200.jpg 1200w" sizes="100vw">
+        <source srcset="/fachada-720.webp 720w, /fachada-800.webp 800w, /fachada.webp 1080w" sizes="50vw" type="image/webp">
+        <img src="/fachada.jpg" srcset="/fachada-720.jpg 720w, /fachada-800.jpg 800w, /fachada.jpg 1080w" sizes="50vw" width="1080" height="1440" alt="Fachada del Hotel Solsona Centre en el Carrer Àngel Guimerà de Solsona" fetchpriority="high">
       </picture>
     </div>
     <div class="portada-texto">
@@ -542,7 +555,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 
       <div class="lista-hab">
         <article class="hab aparece">
-          <picture><source srcset="/doble.webp" type="image/webp"><img src="/doble.jpg" width="908" height="681" alt="Habitación doble con cama de matrimonio" loading="lazy"></picture>
+          <picture class="ampliable" data-grande="/doble.webp"><source srcset="/doble-520.webp 520w, /doble.webp 908w" sizes="(min-width:1040px) 340px, (min-width:700px) 45vw, 90vw" type="image/webp"><img src="/doble.jpg" srcset="/doble-520.jpg 520w, /doble.jpg 908w" sizes="(min-width:1040px) 340px, (min-width:700px) 45vw, 90vw" width="908" height="681" alt="Habitación doble con cama de matrimonio" loading="lazy"></picture>
           <span class="hab-num">01</span>
           <h3>Doble de matrimonio</h3>
           <p>Cama de matrimonio, mesitas de noche, armario y baño privado con ducha y secador.</p>
@@ -550,7 +563,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
         </article>
 
         <article class="hab aparece">
-          <picture><source srcset="/twin.webp" type="image/webp"><img src="/twin.jpg" width="908" height="681" alt="Habitación doble con dos camas individuales" loading="lazy"></picture>
+          <picture class="ampliable" data-grande="/twin.webp"><source srcset="/twin-520.webp 520w, /twin.webp 908w" sizes="(min-width:1040px) 340px, (min-width:700px) 45vw, 90vw" type="image/webp"><img src="/twin.jpg" srcset="/twin-520.jpg 520w, /twin.jpg 908w" sizes="(min-width:1040px) 340px, (min-width:700px) 45vw, 90vw" width="908" height="681" alt="Habitación doble con dos camas individuales" loading="lazy"></picture>
           <span class="hab-num">02</span>
           <h3>Doble con dos camas</h3>
           <p>Dos camas individuales, escritorio y baño privado con ducha.</p>
@@ -558,7 +571,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
         </article>
 
         <article class="hab aparece">
-          <picture><source srcset="/individual.webp" type="image/webp"><img src="/individual.jpg" width="1000" height="750" alt="Habitación individual con escritorio" loading="lazy"></picture>
+          <picture class="ampliable" data-grande="/individual.webp"><source srcset="/individual-520.webp 520w, /individual.webp 1000w" sizes="(min-width:1040px) 340px, (min-width:700px) 45vw, 90vw" type="image/webp"><img src="/individual.jpg" srcset="/individual-520.jpg 520w, /individual.jpg 1000w" sizes="(min-width:1040px) 340px, (min-width:700px) 45vw, 90vw" width="1000" height="750" alt="Habitación individual con escritorio" loading="lazy"></picture>
           <span class="hab-num">03</span>
           <h3>Individual</h3>
           <p>Cama individual, escritorio y baño privado con ducha.</p>
@@ -666,7 +679,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   <section class="seccion" id="servicios">
     <div class="caja servicios-grid">
       <figure class="servicios-foto aparece">
-        <picture><source srcset="/cafeteria.webp" type="image/webp"><img src="/cafeteria.jpg" width="900" height="1125" alt="Cafetería del hotel, con la barra y las mesas" loading="lazy"></picture>
+        <picture class="ampliable" data-grande="/cafeteria.webp"><source srcset="/cafeteria-520.webp 520w, /cafeteria.webp 900w" sizes="(min-width:1040px) 460px, 90vw" type="image/webp"><img src="/cafeteria.jpg" srcset="/cafeteria-520.jpg 520w, /cafeteria.jpg 900w" sizes="(min-width:1040px) 460px, 90vw" width="900" height="1125" alt="Cafetería del hotel, con la barra y las mesas" loading="lazy"></picture>
       </figure>
       <div>
         <span class="etiqueta">Servicios</span>
@@ -680,7 +693,6 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
           <li><svg class="i"><use href="#i-parking"/></svg>Aparcamiento gratuito cerca</li>
           <li><svg class="i"><use href="#i-grupo"/></svg>Salas independientes para grupos</li>
           <li><svg class="i"><use href="#i-mapa"/></svg>Información turística de la zona</li>
-          <li><svg class="i"><use href="#i-wifi"/></svg>Wifi</li>
         </ul>
       </div>
     </div>
@@ -704,7 +716,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 
       </div>
       <figure class="entorno-foto aparece" style="margin:0">
-        <picture><source srcset="/fachada-entrada.webp" type="image/webp"><img src="/fachada-entrada.jpg" width="1000" height="667" alt="Entrada del Hotel Solsona Centre, con el rótulo sobre la puerta" loading="lazy"></picture>
+        <picture class="ampliable" data-grande="/fachada-entrada.webp"><source srcset="/fachada-entrada-520.webp 520w, /fachada-entrada.webp 1000w" sizes="(min-width:1040px) 460px, 90vw" type="image/webp"><img src="/fachada-entrada.jpg" srcset="/fachada-entrada-520.jpg 520w, /fachada-entrada.jpg 1000w" sizes="(min-width:1040px) 460px, 90vw" width="1000" height="667" alt="Entrada del Hotel Solsona Centre, con el rótulo sobre la puerta" loading="lazy"></picture>
         <figcaption>Nuestra entrada, en el Carrer Àngel Guimerà, 3</figcaption>
       </figure>
     </div>
@@ -726,7 +738,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
         </details>
         <details>
           <summary>¿Cuál es el horario de entrada y salida?</summary>
-          <p>Entrada a partir de las 13:00 y salida hasta las 11:00. Las llegadas tardías se pueden coordinar con el hotel.</p>
+          <p>Entrada a partir de las 13:00 y salida hasta las 11:00. Fuera de este horario, póngase en contacto con el hotel.</p>
         </details>
         <details>
           <summary>¿Hay aparcamiento?</summary>
@@ -774,9 +786,14 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
   <div class="caja">
     <span>© <span id="anio">2026</span> Hotel Solsona Centre · Web oficial · Carrer Àngel Guimerà, 3 · 25280 Solsona (Lleida)</span>
     <span><a href="tel:+34650464032">650 464 032</a> · <a href="/">Català</a> · <a href="/es.html">Castellano</a> · <a href="/en.html">English</a></span>
-    <span class="legal"><a href="/legal-es.html#avis-legal">Aviso legal</a> · <a href="/legal-es.html#privacitat">Privacidad</a> · <a href="/legal-es.html#cookies">Cookies</a> · Registro de Turismo de Cataluña HCC-000764</span>
+    <span class="legal"><a href="/legal-es.html">Aviso legal</a> · Registro de Turismo de Cataluña HCC-000764</span>
   </div>
 </footer>
+
+<dialog class="visor" id="visor" aria-label="Foto">
+  <button class="visor-cerrar" type="button" id="visor-cerrar" aria-label="Cerrar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <img id="visor-img" src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="">
+</dialog>
 
 <nav class="barra-movil oculta" id="barra-movil" aria-label="Reservar">
   <a href="tel:+34650464032" data-evento="llamada-barra"><svg class="i"><use href="#i-tel"/></svg> Llamar</a>
@@ -819,7 +836,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
       "mainEntity":[
         {"@type":"Question","name":"¿Qué ventajas tiene reservar directamente?","acceptedAnswer":{"@type":"Answer","text":"Las plataformas de reserva, como Booking, cobran al hotel una comisión por su servicio. En las reservas directas por teléfono o WhatsApp esa comisión no existe, lo que permite ofrecer una tarifa mejor."}},
         {"@type":"Question","name":"¿Cuál es el horario de atención telefónica?","acceptedAnswer":{"@type":"Answer","text":"Atención telefónica hasta las 21:00. Fuera de ese horario, se puede contactar por WhatsApp al 650 464 032."}},
-        {"@type":"Question","name":"¿Cuál es el horario de entrada y salida?","acceptedAnswer":{"@type":"Answer","text":"Entrada a partir de las 13:00 y salida hasta las 11:00. Las llegadas tardías se pueden coordinar con el hotel."}},
+        {"@type":"Question","name":"¿Cuál es el horario de entrada y salida?","acceptedAnswer":{"@type":"Answer","text":"Entrada a partir de las 13:00 y salida hasta las 11:00. Fuera de este horario, póngase en contacto con el hotel."}},
         {"@type":"Question","name":"¿Hay aparcamiento?","acceptedAnswer":{"@type":"Answer","text":"Hay aparcamiento gratuito muy cerca del hotel."}},
         {"@type":"Question","name":"¿Se admiten mascotas?","acceptedAnswer":{"@type":"Answer","text":"El hotel no admite mascotas."}},
         {"@type":"Question","name":"¿Se aceptan grupos?","acceptedAnswer":{"@type":"Answer","text":"Sí. El hotel dispone de salas independientes para grupos. Tarifas para grupos bajo petición."}}
@@ -883,7 +900,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
       if (c.scrollLeft + c.clientWidth >= c.scrollWidth - 4) idx = n - 1;
       [].forEach.call(p.children, function(s, j){ s.classList.toggle('activo', j === idx); });
     }
-    c.addEventListener('scroll', marcar, {passive:true}); marcar();
+    c.addEventListener('scroll', marcar, {passive:true}); requestAnimationFrame(marcar);
   });
 
   var f = document.getElementById('formulario');
@@ -916,6 +933,20 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
       '• ' + L.personas + ': ' + f.personas.options[f.personas.selectedIndex].text + (tipo ? '\n• ' + L.hab + ': ' + f.tipo.options[f.tipo.selectedIndex].text : '') + '\n' + L.gracias;
     window.open('https://wa.me/' + TEL + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
   });
+
+  // Fotos ampliables
+  var visor = document.getElementById('visor'), vimg = document.getElementById('visor-img');
+  if (visor && visor.showModal) {
+    document.querySelectorAll('.ampliable').forEach(function(pic){
+      var img = pic.querySelector('img');
+      img.setAttribute('tabindex','0'); img.setAttribute('role','button');
+      function abrir(){ vimg.src = pic.dataset.grande; vimg.alt = img.alt; visor.showModal(); }
+      img.addEventListener('click', abrir);
+      img.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); abrir(); } });
+    });
+    // se cierra tocando en cualquier sitio (foto, fondo o botón) o con Escape
+    visor.addEventListener('click', function(){ visor.close(); });
+  }
 
   var bm = document.getElementById('mapa-cargar');
   if (bm) bm.addEventListener('click', function(){
